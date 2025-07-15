@@ -99,7 +99,7 @@ function Nav() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 className="w-full flex items-center justify-center gap-2"
-                href="https://www.instagram.com/mitthi._.ig/"
+                href="https://www.instagram.com/de_corevas/"
               >
                 Instagram <FaSquareInstagram fontSize={20} />
               </NavbarButton>
