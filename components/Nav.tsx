@@ -55,7 +55,7 @@ function Nav() {
             <NavbarButton
               variant="primary"
               className="flex items-center justify-center gap-2"
-              href="https://www.instagram.com/mitthi._.ig/"
+              href="https://www.instagram.com/de_corevas/"
             >
               Instagram <FaSquareInstagram fontSize={20} />
             </NavbarButton>
