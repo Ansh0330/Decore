@@ -7,8 +7,8 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
-
 import React, { useRef, useState } from "react";
+import logo from "../public/Images/logo.jpeg";
 
 
 interface NavbarProps {
@@ -237,10 +237,11 @@ export const NavbarLogo = () => {
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-charcoal"
     >
       <img
-        src="https://assets.aceternity.com/logo-dark.png"
+        src = "/Images/logo.jpeg"
         alt="logo"
         width={30}
         height={30}
+        className="rounded-full"
       />
       <span className="font-semibold text-3xl text-charcoal ">DeCore</span>
     </a>
