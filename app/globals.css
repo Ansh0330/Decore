@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 @font-face {
   font-family: "Self Modern";
@@ -42,6 +43,11 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+::selection {
+  background-color: #EAD3C2; /* --color-rose (or --color-clay: #D6BFAF;) */
+  color: #3A3A3A;            /* --color-charcoal */
 }
 
 body {
