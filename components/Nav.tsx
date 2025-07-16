@@ -59,6 +59,7 @@ function Nav() {
               variant="secondary"
               className={`flex items-center justify-center gap-2  ${montserrat.className} bg-peach text-white`}
               href="https://wa.me/+919953850241"
+              target="_blank"
             >
               {" "}
               WhatsApp <IoLogoWhatsapp fontSize={20} />{" "}
@@ -67,6 +68,7 @@ function Nav() {
               variant="primary"
               className={`flex items-center justify-center gap-2 ${montserrat.className}`}
               href="https://www.instagram.com/de_corevas/"
+              target="_blank"
             >
               Instagram <FaSquareInstagram fontSize={20} />
             </NavbarButton>
