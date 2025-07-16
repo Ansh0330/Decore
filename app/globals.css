@@ -1,14 +1,40 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Self Modern";
+  src: url("/fonts/selfModernRegular.woff2") format("woff2");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Self Modern";
+  src: url("/fonts/selfModernItalic.woff2") format("woff2");
+  font-style: italic;
+  font-display: swap;
+}
+
 @theme {
-  --color-clay: #D6BFAF;
-  --color-rose: #EAD3C2;
-  --color-sage: #B8C4A8;
-  --color-blue: #C8DDEB;
-  --color-linen: #FDF9F4;
-  --color-charcoal: #3A3A3A;
-  --color-ash: #7A7A7A;
-  --color-peach: #D68C68;
+  /* Main Neutrals & Backgrounds */
+  --color-linen: #fdf9f4; /* Primary background - a gentle off-white */
+  --color-parchment: #f5eee7; /* Lighter, warmer neutral for subtle variations */
+  --color-charcoal: #3a3a3a; /* Main text color - a soft dark grey */
+  --color-ash: #7a7a7a; /* Secondary text, borders, subtle details - medium grey */
+
+  /* Earthy Tones & Accents */
+  --color-clay: #d6bfaf; /* Warm, inviting neutral - great for backgrounds or cards */
+  --color-rose: #ead3c2; /* Delicate, soft pinkish-beige */
+  --color-sage: #b8c4a8; /* Calming, muted green */
+  --color-blue: #c8ddeb; /* Serene, light sky blue */
+
+  /* Primary Accent & CTA */
+  --color-peach: #d68c68; /* Your main accent/CTA color - warm, inviting orange-pink */
+
+  /* Deeper & Muted Accent (Optional Additions) */
+  --color-terracotta: #b5654b; /* Richer, slightly more saturated version of peach for highlights/hovers */
+  --color-dusty-lavender: #b9a8c4; /* Soft, cool, slightly unexpected pop for decorative elements */
+
+  --font-family-self-modern: "Self Modern", sans-serif;
 }
 
 @media (prefers-color-scheme: light) {

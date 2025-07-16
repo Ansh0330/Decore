@@ -14,6 +14,14 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { useState } from "react";
 
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // Montserrat supports multiple weights
+  display: "swap", // Optional: improves loading performance
+});
+
 function Nav() {
   const navItems = [
     {
@@ -42,11 +50,14 @@ function Nav() {
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
-          <NavItems items={navItems} className="text-charcoal font-medium" />
+          <NavItems
+            items={navItems}
+            className={`text-charcoal ${montserrat.className} uppercase flex items-center justify-center font-semibold tracking-wide`}
+          />
           <div className="flex items-center gap-4">
             <NavbarButton
               variant="secondary"
-              className="flex items-center justify-center gap-2 bg-peach text-white"
+              className={`flex items-center justify-center gap-2  ${montserrat.className} bg-peach text-white`}
               href="https://wa.me/+919953850241"
             >
               {" "}
@@ -54,7 +65,7 @@ function Nav() {
             </NavbarButton>
             <NavbarButton
               variant="primary"
-              className="flex items-center justify-center gap-2"
+              className={`flex items-center justify-center gap-2 ${montserrat.className}`}
               href="https://www.instagram.com/de_corevas/"
             >
               Instagram <FaSquareInstagram fontSize={20} />
@@ -81,7 +92,7 @@ function Nav() {
                 key={`mobile-link-${idx}`}
                 href={item.link}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-charcoal hover:text-ash"
+                className={`relative text-charcoal hover:text-black ${montserrat.className} font-semibold tracking-wide uppercase`}
               >
                 <span className="block">{item.name}</span>
               </a>
@@ -91,14 +102,14 @@ function Nav() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
                 href="https://wa.me/+919953850241"
-                className="w-full flex items-center justify-center gap-2 bg-peach text-white"
+                className={`w-full flex items-center justify-center gap-2  ${montserrat.className} bg-peach text-white`}
               >
                 WhatsApp <IoLogoWhatsapp fontSize={20} />
               </NavbarButton>
               <NavbarButton
                 onClick={() => setIsMobileMenuOpen(false)}
                 variant="primary"
-                className="w-full flex items-center justify-center gap-2"
+                className={`w-full flex items-center justify-center gap-2  ${montserrat.className}`}
                 href="https://www.instagram.com/de_corevas/"
               >
                 Instagram <FaSquareInstagram fontSize={20} />
