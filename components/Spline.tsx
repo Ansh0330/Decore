@@ -1,17 +1,35 @@
-"use client"
-import dynamic from 'next/dynamic';
+"use client";
 
-const Spline = dynamic(() => import('@splinetool/react-spline'), {
-  ssr: false,
-  loading: () => <div className="w-full h-full flex items-center justify-center bg-parchment text-ash text-3xl px-4 py-2 rounded-lg">Loading 3D scene...</div>
-});
+import React, { useEffect, useState } from "react";
 
 export default function SplineComponent() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "module";
+    script.src =
+      "https://unpkg.com/@splinetool/viewer@latest/build/spline-viewer.js";
+    script.onload = () => setIsLoaded(true);
+    document.head.appendChild(script);
+
+    return () => {
+      if (document.head.contains(script)) {
+        document.head.removeChild(script);
+      }
+    };
+  }, []);
+
+  if (!isLoaded) {
+    return <div>Loading 3D scene...</div>;
+  }
+
   return (
-    <main className='h-full w-full'>
-      <Spline
-        scene="https://prod.spline.design/x-g0TzUTIyGn-V3S/scene.splinecode"
-      />
+    <main>
+      {React.createElement("spline-viewer", {
+        url: "https://prod.spline.design/x-g0TzUTIyGn-V3S/scene.splinecode",
+        style: { width: "100%", height: "500px" },
+      })}
     </main>
   );
 }

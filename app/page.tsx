@@ -154,7 +154,7 @@ export default function LandingPage() {
         {/* Right Column - Image */}
         <div className="w-full md:w-[40%] mt-8 md:mt-0 order-1 md:order-2 flex justify-center items-center">
           <img
-            src="./Images/logo.jpeg"
+            src="./Images/hero_image.png"
             alt=""
             className="w-full h-auto object-contain"
           />

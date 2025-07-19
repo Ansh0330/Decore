@@ -4,14 +4,8 @@ import { useInView } from "react-intersection-observer";
 import { Montserrat } from "next/font/google";
 import SplineComponent from "@/components/Spline";
 import { PinContainer } from "@/components/ui/3d-pin";
-import { Mail, Instagram, Phone, ArrowRight, MapPin, Icon } from "lucide-react";
-import Link from "next/link";
+import { Mail, Instagram, Phone } from "lucide-react";
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap", //
-});
 
 const cardInfo = [
   {
@@ -53,7 +47,7 @@ const IconComponentMap = {
   Instagram: Instagram,
 };
 
-const page = () => {
+const ContactPage = () => {
   const { ref: connectOnlineRef, inView: connectOnlineInView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
@@ -64,10 +58,10 @@ const page = () => {
       <section className="w-11/12 sm:w-10/12 lg:w-9/12 mx-auto flex flex-col-reverse md:flex-row justify-evenly items-center md:items-start py-12 md:py-20 gap-8 md:gap-16">
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-4 md:space-y-6">
           <h1 className="text-charcoal font-family-self-modern font-bold text-5xl md:text-6xl leading-tight">
-            Let's Connect
+            Let`&apos;`s Connect
           </h1>
           <p className="text-ash font-sans text-lg leading-relaxed max-w-xl">
-            We'd love to hear from you! Whether it's a custom order, a question
+            We`&apos;`d love to hear from you! Whether it`&apos;`s a custom order, a question
             about our art, or just to say hello, feel free to reach out.
           </p>
         </div>
@@ -127,4 +121,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ContactPage;
