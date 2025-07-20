@@ -45,7 +45,7 @@ const storyPoints = [
     title: "The Seed of Inspiration",
     description:
       "De Core began with a deep appreciation for the beauty of handmade crafts and a desire to bring authentic artistry into modern living spaces. It was born from a passion for textures, colors, and the stories they tell.",
-    image: "https://placehold.co/200x150/FDF9F4/3A3A3A/png?text=Inspiration", // Optional image for this point
+    image: "/Images/inspiration.avif",
   },
   {
     id: 2,
@@ -197,11 +197,11 @@ const AboutPage = () => {
                     <div className="absolute -left-2 top-0 w-1 h-full bg-gradient-to-b from-[#d68c68] via-[#b5654b] to-transparent opacity-30 rounded-full"></div>
                     <p className="text-[#7a7a7a] font-sans text-base sm:text-lg leading-relaxed text-justify lg:text-left pl-4 relative">
                       <span className="absolute -left-2 -top-2 text-4xl text-[#d68c68]/20 font-serif">
-                        `&quot;`
+                        &quot;
                       </span>
                       {founder.description}
                       <span className="absolute -bottom-4 right-0 text-4xl text-[#d68c68]/20 font-serif">
-                        `&quot;`
+                        &quot;
                       </span>
                     </p>
                   </div>
@@ -224,7 +224,7 @@ const AboutPage = () => {
       {/* Closing Line */}
       <section className="py-12 md:py-16 text-center">
         <p className="text-charcoal font-sans text-base sm:text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-          Thank you for getting to know us. We can`&apos;`t wait to create something
+          Thank you for getting to know us. We can&apos;t wait to create something
           beautiful with you.
         </p>
       </section>

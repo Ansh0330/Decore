@@ -154,7 +154,7 @@ export default function LandingPage() {
         {/* Right Column - Image */}
         <div className="w-full md:w-[40%] mt-8 md:mt-0 order-1 md:order-2 flex justify-center items-center">
           <img
-            src="./Images/hero_image.png"
+            src="./Images/image.png"
             alt=""
             className="w-full h-auto object-contain"
           />
@@ -162,7 +162,7 @@ export default function LandingPage() {
       </div>
 
       {/* Our Collections Section  */}
-      <div className="w-10/12 mx-auto mt-14 text-center">
+      <div className="w-10/12 mx-auto mt-16 text-center">
         <h1
           ref={collectionsRef}
           className=" mx-auto text-charcoal font-family-self-modern font-bold text-4xl md:text-6xl mb-12 relative inline-block group"
