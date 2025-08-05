@@ -183,7 +183,7 @@ export default function LandingPage() {
                         `}
           ></span>
         </h1>
-        <div className="w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 justify-center gap-8 mt-4">
+        <div className="sm:w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 justify-center gap-8 mt-4">
           {productCollections.map((product) => (
             <div
               key={product.title}
