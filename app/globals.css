@@ -16,17 +16,15 @@
 }
 
 @theme {
-  /* Main Neutrals & Backgrounds */
-  --color-linen: #fdf9f4; /* Primary background - a gentle off-white */
-  --color-parchment: #f5eee7; /* Lighter, warmer neutral for subtle variations */
-  --color-charcoal: #3a3a3a; /* Main text color - a soft dark grey */
-  --color-ash: #7a7a7a; /* Secondary text, borders, subtle details - medium grey */
+  --color-linen: #fdf9f4; 
+  --color-parchment: #f5eee7;
+  --color-charcoal: #3a3a3a; 
+  --color-ash: #7a7a7a; 
 
-  /* Earthy Tones & Accents */
-  --color-clay: #d6bfaf; /* Warm, inviting neutral - great for backgrounds or cards */
-  --color-rose: #ead3c2; /* Delicate, soft pinkish-beige */
-  --color-sage: #b8c4a8; /* Calming, muted green */
-  --color-blue: #c8ddeb; /* Serene, light sky blue */
+  --color-clay: #d6bfaf; 
+  --color-rose: #ead3c2; 
+  --color-sage: #b8c4a8; 
+  --color-blue: #c8ddeb; 
 
   /* Primary Accent & CTA */
   --color-peach: #d68c68; /* Your main accent/CTA color - warm, inviting orange-pink */

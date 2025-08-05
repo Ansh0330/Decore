@@ -20,7 +20,7 @@ const founders = [
     designation: "Chief Artisan & Creative Lead",
     description:
       "Vanshika is the creative soul behind Decore, bringing the brand’s vision to life with her exceptional artistry and dedication. From designing intricate lip and art elements to crafting every piece with a personal touch, she’s the heart of Decore’s aesthetic. Her eye for detail, steady hands, and passion for visual expression shine through in every product we create.",
-    image: "/Images/Vanshika.png",
+    image: "/Images/aboutPage/Vanshika.png",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const founders = [
     designation: "Operations Support Coordinator",
     description:
       "Sia is an important part of the Decore team, always showing up with support, positivity, and belief in our vision. While she isn’t directly involved in the creative or technical side, her presence and encouragement constantly uplift the team. Her energy and trust keep us grounded and motivated throughout our journey.",
-    image: "/Images/Sia.png",
+    image: "/Images/aboutPage/Sia.png",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const founders = [
     designation: "Head of Operations & Brand Development",
     description:
       "Agrima is the strategic mind behind Decore, making sure everything runs smoothly behind the scenes. She oversees the website operations, carefully curates the pricing of each product and prototype, and ensures that everything aligns with the brand’s value and vision. Her sharp sense of aesthetics and smart planning make her an essential part of the design process, always offering creative input and practical solutions.",
-    image: "/Images/Agirma.png",
+    image: "/Images/aboutPage/Agrima.png",
   },
 ];
 const storyPoints = [
@@ -45,29 +45,28 @@ const storyPoints = [
     title: "The Seed of Inspiration",
     description:
       "De Core began with a deep appreciation for the beauty of handmade crafts and a desire to bring authentic artistry into modern living spaces. It was born from a passion for textures, colors, and the stories they tell.",
-    image: "/Images/inspiration.avif",
+    image: "/Images/aboutPage/inspiration.jpg",
   },
   {
     id: 2,
     title: "Mastering the Craft",
     description:
       "Our journey led us to explore various traditional techniques, from the intricate mud-mirror work of Lippan to the tactile depth of textured canvases. Each craft was mastered with dedication and respect for its heritage.",
-    image: "https://placehold.co/200x150/D6BFAF/3A3A3A/png?text=Crafting",
+    image: "/Images/aboutPage/crafting.jpg",
   },
   {
     id: 3,
     title: "Beyond Art: Functional Elegance",
     description:
       "We expanded our vision beyond wall art to include functional pieces like custom trinket trays, believing that everyday objects can also be works of art, blending utility with aesthetic charm.",
-    image: "https://placehold.co/200x150/EAD3C2/3A3A3A/png?text=Elegance",
+    image: "/Images/aboutPage/elegance.webp",
   },
   {
     id: 4,
     title: "A Commitment to You",
     description:
       "At the heart of De Core is our commitment to personalization. We empower you to co-create, ensuring each piece is not just beautiful, but a true reflection of your style and personality.",
-    image:
-      "https://placehold.co/200x150/B8C4A8/3A3A3A/png?text=Personalization",
+    image: "/Images/aboutPage/personalisation.jpg",
   },
 ];
 
@@ -85,15 +84,15 @@ const AboutPage = () => {
           <h1 className="text-charcoal font-family-self-modern font-bold tracking-wide text-4xl sm:text-5xl md:text-6xl mb-4">
             Our Story
           </h1>
-          <p className="text-ash font-sans text-base sm:text-lg max-w-3xl mx-auto mb-12 leading-relaxed">
+          <p className="text-ash font-sans text-base sm:text-lg max-w-4xl mx-auto mb-12 leading-relaxed">
             De Core is a celebration of artistry and individuality, bringing
-            handcrafted beauty into your home. Discover the journey that shaped
-            our passion.
+            handcrafted beauty into your home.
+            <br /> Discover the journey that shaped our passion.
           </p>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto">
-          <TracingBeam className="px-2 sm:px-6">
+          <TracingBeam className="px-2 hidden sm:block sm:px-6">
             <div className="mx-auto py-10">
               {storyPoints.map((point, index) => (
                 <div
@@ -170,7 +169,7 @@ const AboutPage = () => {
                         alt={founder.name}
                         width={1200}
                         height={800}
-                        className="object-cover w-full h-64 sm:h-80 transition-transform duration-700 group-hover:scale-110"
+                        className="object-fill w-full h-64 sm:h-80 transition-transform duration-700 group-hover:scale-110"
                       />
                     </div>
                     <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-[#3a3a3a]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -184,13 +183,6 @@ const AboutPage = () => {
                     >
                       {founder.name}
                     </h3>
-                    <div className="flex items-center justify-center lg:justify-start gap-3">
-                      <div className="h-px w-12 bg-gradient-to-r from-transparent via-[#d68c68] to-transparent"></div>
-                      <p className="text-[#d68c68] font-medium text-sm sm:text-lg uppercase">
-                        {founder.designation}
-                      </p>
-                      <div className="h-px w-12 bg-gradient-to-r from-transparent via-[#d68c68] to-transparent"></div>
-                    </div>
                   </div>
 
                   <div className="relative">
@@ -224,8 +216,8 @@ const AboutPage = () => {
       {/* Closing Line */}
       <section className="py-12 md:py-16 text-center">
         <p className="text-charcoal font-sans text-base sm:text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-          Thank you for getting to know us. We can&apos;t wait to create something
-          beautiful with you.
+          Thank you for getting to know us. We can&apos;t wait to create
+          something beautiful with you.
         </p>
       </section>
     </div>

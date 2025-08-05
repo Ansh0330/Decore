@@ -47,6 +47,14 @@ const productCollections = [
     link: "/products",
     buttonText: "Explore Trays",
   },
+  {
+    title: "Bookmarks",
+    description:
+      "Elevate your reading experience with our artisanal bookmarks. Crafted with care, they combine beauty and utility, making every page turn a delight.",
+    imageUrl: "/Images/bookmark.png", // Placeholder for Bookmarks
+    link: "/products",
+    buttonText: "Explore Bookmarks",
+  },
 ];
 
 const bentoGridItems = [
@@ -175,7 +183,7 @@ export default function LandingPage() {
                         `}
           ></span>
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-8 mt-4">
+        <div className="w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 justify-center gap-8 mt-4">
           {productCollections.map((product) => (
             <div
               key={product.title}

@@ -65,7 +65,7 @@ const ContactPage = () => {
             about our art, or just to say hello, feel free to reach out.
           </p>
         </div>
-        <div className="min-w-fit min-h-fit h-[300px] sm:h-[350px] md:h-[400px] lg:h-[430px] relative overflow-hidden order-2 md:order-2 -mt-18">
+        <div className="min-w-fit min-h-fit hidden sm:block sm:h-[350px] md:h-[400px] lg:h-[430px] relative overflow-hidden order-2 md:order-2 -mt-18">
           <SplineComponent />
         </div>
       </section>
