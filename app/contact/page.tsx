@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import { Montserrat } from "next/font/google";
 import SplineComponent from "@/components/Spline";
 import { PinContainer } from "@/components/ui/3d-pin";
 import { Mail, Instagram, Phone } from "lucide-react";

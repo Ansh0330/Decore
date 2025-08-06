@@ -143,7 +143,7 @@ const AboutPage = () => {
             `}
           ></span>
         </h1>
-        <p className="text-ash font-sans text-base sm:text-lg max-w-3xl mx-auto mb-16 leading-relaxed">
+        <p className="text-ash font-sans text-base sm:text-lg max-w-4xl mx-auto mb-12 leading-relaxed">
           Get to know the passionate individuals whose dedication and vision
           bring the world of De Core to life.
         </p>
