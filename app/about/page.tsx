@@ -92,7 +92,7 @@ const AboutPage = () => {
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto">
-          <TracingBeam className="px-2 hidden sm:block sm:px-6">
+          <TracingBeam className="px-2 sm:px-6">
             <div className="mx-auto py-10">
               {storyPoints.map((point, index) => (
                 <div
