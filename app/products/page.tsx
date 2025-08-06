@@ -70,7 +70,7 @@ const Page = () => {
         {/* Carousel */}
         <div className="w-full max-w-screen-xl px-4 sm:px-6 mx-auto">
           <Carousel
-            className="w-full p-4"
+            className="w-full p-4 mx-auto"
             plugins={[
               Autoplay({
                 delay: 2000,
@@ -84,7 +84,7 @@ const Page = () => {
               loop: true,
             }}
           >
-            <CarouselContent>
+            <CarouselContent className="mx-auto">
               {lippanData.map((product, index) => (
                 <CarouselItem
                   key={index}
@@ -94,6 +94,7 @@ const Page = () => {
                     flex-shrink-0 
                     sm:basis-1/2 md:basis-1/3
                     cursor-pointer
+                    
                   "
                   style={{ maxWidth: 360 }}
                 >
