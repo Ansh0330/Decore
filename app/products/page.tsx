@@ -21,7 +21,7 @@ const montserrat = Montserrat({
 
 const CARD_HEIGHT_MOBILE = 400; // px, mobile card height
 const CARD_HEIGHT_DESKTOP = 500; // px, desktop card height
-const IMG_HEIGHT_MOBILE = 160; // px, image on mobile
+const IMG_HEIGHT_MOBILE = 200; // px, image on mobile
 const IMG_HEIGHT_DESKTOP = 220; // px, image on desktop
 
 const Page = () => {
@@ -68,7 +68,7 @@ const Page = () => {
         </p>
 
         {/* Carousel */}
-        <div className="w-full">
+        <div className="w-full max-w-screen-xl px-4 sm:px-6 mx-auto">
           <Carousel
             className="w-full p-4"
             plugins={[
@@ -142,8 +142,8 @@ const Page = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="hidden md:flex cursor-pointer" />
+            <CarouselNext className="hidden md:flex cursor-pointer" />
           </Carousel>
         </div>
       </section>
