@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# De Core: Handcrafted Art Showcase
 
-## Getting Started
+An elegant and modern showcase website for handcrafted items, including Lippan art, canvas textures, and customizable trinket trays. The site is designed to celebrate artistry and provide a seamless, visually rich experience.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🌟 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Homepage:** A dynamic landing page with a captivating hero section, a product category showcase, and a bento grid highlighting the brand's values.
+* **Products Page:** A dedicated section with category-wise sliders for Lippan art, canvas, and trinket trays.
+* **About Us:** An engaging "Our Story" section featuring a `TracingBeam` and a "Meet Our Founders" section with an `AnimatedTooltip` and alternating bio layouts.
+* **Contact Us:** A modern contact page with a Spline 3D greeting bot, clear contact cards, and studio address information.
+* **Responsive Design:** Fully optimized for seamless viewing on all devices using Tailwind CSS.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🚀 Tech Stack
 
-## Learn More
+* **Framework:** [Next.js](https://nextjs.org/) (App Router)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Components:** [Aceternity UI](https://ui.aceternity.com/) (for advanced animated components)
+* **3D Assets:** [Spline](https://spline.design/) (for the interactive 3D model)
+* **Icons:** [Lucide React](https://www.google.com/search?q=https://lucide.dev/showcase/react) & [React Icons](https://react-icons.github.io/react-icons/)
+* **Animations:** [Framer Motion](https://www.framer.com/motion/) (used internally by Aceternity UI)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### ⚙️ Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository:**
+   **Bash**
 
-## Deploy on Vercel
+   ```
+   git clone https://github.com/Ansh0330/Decore
+   cd Decore
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
+2. **Install dependencies:**
+   **Bash**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```
+   npm install
+   # or
+   yarn install
+   ```
+3. **Run the development server:**
+   **Bash**
+
+   ```
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+   Open [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) in your browser to see the result.
+
+---
+
+### 📁 File Structure
+
+The project follows a standard Next.js App Router structure. The key directories are:
+
+* `app/`: Contains all your page routes (e.g., `page.tsx`, `about/page.tsx`, `contact/page.tsx`).
+* `components/`: Stores all reusable React components, including the custom-styled Aceternity UI components.
+* `public/`: Hosts static assets like images (`/Images/`), fonts, and the `logo.jpeg` file.
+* `styles/`: Contains your global CSS file (`globals.css`) for base styles and Tailwind directives.
+
+---
+
+### ✍️ Authors
+
+* **Anshdotdev**
